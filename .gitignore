@@ -1,5 +1,7 @@
 /node_modules
 /public/hot
+/public/css/aap.css
+/public/js/aap.js
 /public/vendor/*
 /public/storage
 /storage/*.key
