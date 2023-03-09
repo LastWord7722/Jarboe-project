@@ -25,6 +25,10 @@
                     <i class="fa fa-lg fa-fw fa-newspaper-o"></i>
                     <span class="menu-item-parent">Posts</span>
                 </a>
+
+                <a href="{{ admin_url('category') }}">
+                    <span class="menu-item-parent">Category</span>
+                </a>
             </li>
 
             @if (config('jarboe.admin_panel.default_routes_enabled'))

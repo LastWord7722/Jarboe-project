@@ -4,8 +4,9 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 
 use Yaro\Jarboe\Http\Controllers\AbstractTableController;
-use Illuminate\Http\Request;
 use Yaro\Jarboe\Table\Fields\Checkbox;
+use Yaro\Jarboe\Table\Fields\Number;
+use Yaro\Jarboe\Table\Fields\Select;
 use Yaro\Jarboe\Table\Fields\Text;
 use Yaro\Jarboe\Table\Fields\Wysiwyg;
 
@@ -18,6 +19,7 @@ class PostsController extends AbstractTableController
         $this->addFields([
             Text::make('title'),
             Wysiwyg::make('content'),
+            Select::make('category_id')->relation('category', 'title')->type(Select::SELECT_2),
             Checkbox::make('is_published'),
         ]);
     }
