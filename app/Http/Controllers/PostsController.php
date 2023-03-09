@@ -5,7 +5,6 @@ use App\Models\Post;
 
 use Yaro\Jarboe\Http\Controllers\AbstractTableController;
 use Yaro\Jarboe\Table\Fields\Checkbox;
-use Yaro\Jarboe\Table\Fields\Number;
 use Yaro\Jarboe\Table\Fields\Select;
 use Yaro\Jarboe\Table\Fields\Text;
 use Yaro\Jarboe\Table\Fields\Wysiwyg;
