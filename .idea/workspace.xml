@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc61f89f-382c-4deb-aa68-562acfae9e10" name="Changes" comment="Подключил стандартый crud для постов, проверил всё работает&#10;регистрация, авторизация так же присутсвует">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
+    <list default="true" id="fc61f89f-382c-4deb-aa68-562acfae9e10" name="Changes" comment="new file">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2023_03_09_082022_create_tags_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2023_03_09_085023_create_posts_tags_table.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2023_02_09_120406_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_03_09_082021_create_categories_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2023_03_09_085023_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_03_09_085023_create_posts_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/vendor/jarboe/inc/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/jarboe/inc/navigation.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -161,7 +165,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/migrations" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -171,9 +175,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\OpenServer\domains\Jarboe-project\database\migrations" />
       <recent name="D:\OpenServer\domains\Jarboe-project\app\Http\Controllers" />
       <recent name="D:\OpenServer\domains\Jarboe-project\resources\views\vendor\jarboe\inc" />
-      <recent name="D:\OpenServer\domains\Jarboe-project\database\migrations" />
     </key>
   </component>
   <component name="RunManager">
@@ -192,7 +196,7 @@
       <updated>1678349951392</updated>
       <workItem from="1678349953379" duration="1538000" />
       <workItem from="1678351624833" duration="4946000" />
-      <workItem from="1678359209798" duration="3731000" />
+      <workItem from="1678359209798" duration="9278000" />
     </task>
     <task id="LOCAL-00001" summary="Подключил стандартый crud для постов, проверил всё работает&#10;регистрация, авторизация так же присутсвует">
       <created>1678362832630</created>
@@ -201,7 +205,28 @@
       <option name="project" value="LOCAL" />
       <updated>1678362832630</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="создал категории, связь один ко многим относительно постов&#10;создал круд для категорий. В ПостКонтроллер создал селект(для категорий)">
+      <created>1678364505490</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678364505490</updated>
+    </task>
+    <task id="LOCAL-00003" summary="new file">
+      <created>1678364536566</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678364536566</updated>
+    </task>
+    <task id="LOCAL-00004" summary="new file">
+      <created>1678364581810</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678364581810</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +247,8 @@
     <MESSAGE value="Получилось запустить панель, при этом в vendor/..layuts/main.blade.php закометил 100 строки &#10;выдавало ошибку" />
     <MESSAGE value="Подключил стандартый crud для постов, проверил всё работает&#10;регистрация, авторизация так же" />
     <MESSAGE value="Подключил стандартый crud для постов, проверил всё работает&#10;регистрация, авторизация так же присутсвует" />
-    <option name="LAST_COMMIT_MESSAGE" value="Подключил стандартый crud для постов, проверил всё работает&#10;регистрация, авторизация так же присутсвует" />
+    <MESSAGE value="создал категории, связь один ко многим относительно постов&#10;создал круд для категорий. В ПостКонтроллер создал селект(для категорий)" />
+    <MESSAGE value="new file" />
+    <option name="LAST_COMMIT_MESSAGE" value="new file" />
   </component>
 </project>
