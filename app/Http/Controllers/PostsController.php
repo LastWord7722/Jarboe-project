@@ -22,7 +22,7 @@ class PostsController extends AbstractTableController
             Text::make('title'),
             Wysiwyg::make('content'),
             Select::make('category_id')->relation('category', 'title')->type(Select::SELECT_2),
-            Tags::make('tag_id')->relation('tags','title')->hideOptions(),
+            Tags::make('tag_id')->relation('tags','title')->ajax(true),
             Checkbox::make('is_published'),
         ]);
     }
