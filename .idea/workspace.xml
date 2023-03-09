@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc61f89f-382c-4deb-aa68-562acfae9e10" name="Changes" comment="добавил отвязку тегов при удалении поста">
+    <list default="true" id="fc61f89f-382c-4deb-aa68-562acfae9e10" name="Changes" comment="добавил tags:make ajax">
       <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +187,7 @@
       <workItem from="1678349953379" duration="1538000" />
       <workItem from="1678351624833" duration="4946000" />
       <workItem from="1678359209798" duration="11696000" />
-      <workItem from="1678374407374" duration="1688000" />
+      <workItem from="1678374407374" duration="2045000" />
     </task>
     <task id="LOCAL-00001" summary="Подключил стандартый crud для постов, проверил всё работает&#10;регистрация, авторизация так же присутсвует">
       <created>1678362832630</created>
@@ -230,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678376096390</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="добавил tags:make ajax">
+      <created>1678376394278</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678376394278</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,6 +263,7 @@
     <MESSAGE value="new file" />
     <MESSAGE value="попытка сделать теги, на данный момент не получилось реализовать добавление к постам теги&#10;&#10;сам круд работает" />
     <MESSAGE value="добавил отвязку тегов при удалении поста" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавил отвязку тегов при удалении поста" />
+    <MESSAGE value="добавил tags:make ajax" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил tags:make ajax" />
   </component>
 </project>

@@ -21,9 +21,11 @@ class PostsController extends AbstractTableController
         $this->addFields([
             Text::make('title'),
             Wysiwyg::make('content'),
-            Select::make('category_id')->relation('category', 'title')->type(Select::SELECT_2),
-            Tags::make('tag_id')->relation('tags','title')->ajax(true),
-            Checkbox::make('is_published'),
+            Select::make('category_id')->relation('category', 'title')->
+                type(Select::SELECT_2)->title('Category'),
+            Tags::make('tag_id')->relation('tags','title')->ajax(true)->
+                title('Tags'),
+            Checkbox::make('is_published')->title('published it'),
         ]);
     }
 }
