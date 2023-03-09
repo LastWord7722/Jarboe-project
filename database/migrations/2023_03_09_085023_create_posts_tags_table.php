@@ -20,10 +20,10 @@ class CreatePostsTagsTable extends Migration
 
 
             $table->index('post_id','post_tag_post_idx');
-            $table->foreign('post_id','post_tag_post_fk')->references('id')->on('posts');
+            $table->foreign('post_id','post_tag_post_fk')->references('id')->on('posts')->cascadeOnDelete();
 
 
-            $table->foreign('tag_id','post_tag_tag_fk')->references('id')->on('tags');
+            $table->foreign('tag_id','post_tag_tag_fk')->references('id')->on('tags')->cascadeOnDelete();
             $table->index('tag_id','post_tag_tag_idx');
         });
     }

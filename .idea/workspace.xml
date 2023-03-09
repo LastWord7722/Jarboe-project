@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc61f89f-382c-4deb-aa68-562acfae9e10" name="Changes" comment="new file">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2023_03_09_082022_create_tags_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2023_03_09_085023_create_posts_tags_table.php" afterDir="false" />
+    <list default="true" id="fc61f89f-382c-4deb-aa68-562acfae9e10" name="Changes" comment="попытка сделать теги, на данный момент не получилось реализовать добавление к постам теги&#10;&#10;сам круд работает">
       <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2023_02_09_120406_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_03_09_082021_create_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2023_03_09_085023_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_03_09_085023_create_posts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/jarboe/inc/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/jarboe/inc/navigation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2023_03_09_085023_create_posts_tags_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_03_09_085023_create_posts_tags_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +188,8 @@
       <updated>1678349951392</updated>
       <workItem from="1678349953379" duration="1538000" />
       <workItem from="1678351624833" duration="4946000" />
-      <workItem from="1678359209798" duration="9278000" />
+      <workItem from="1678359209798" duration="11696000" />
+      <workItem from="1678374407374" duration="1343000" />
     </task>
     <task id="LOCAL-00001" summary="Подключил стандартый crud для постов, проверил всё работает&#10;регистрация, авторизация так же присутсвует">
       <created>1678362832630</created>
@@ -226,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678364581810</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="попытка сделать теги, на данный момент не получилось реализовать добавление к постам теги&#10;&#10;сам круд работает">
+      <created>1678371328080</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678371328080</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +249,7 @@
     <MESSAGE value="Подключил стандартый crud для постов, проверил всё работает&#10;регистрация, авторизация так же присутсвует" />
     <MESSAGE value="создал категории, связь один ко многим относительно постов&#10;создал круд для категорий. В ПостКонтроллер создал селект(для категорий)" />
     <MESSAGE value="new file" />
-    <option name="LAST_COMMIT_MESSAGE" value="new file" />
+    <MESSAGE value="попытка сделать теги, на данный момент не получилось реализовать добавление к постам теги&#10;&#10;сам круд работает" />
+    <option name="LAST_COMMIT_MESSAGE" value="попытка сделать теги, на данный момент не получилось реализовать добавление к постам теги&#10;&#10;сам круд работает" />
   </component>
 </project>
