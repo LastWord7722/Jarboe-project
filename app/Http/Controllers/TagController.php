@@ -1,12 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Category;
+use App\Http\Requests\Tag\StoreRequest;
+use App\Http\Requests\Tag\UpdateRequest;
 
 use App\Models\Tag;
 use Yaro\Jarboe\Http\Controllers\AbstractTableController;
 use Yaro\Jarboe\Table\Fields\Text;
-
 
 class TagController extends AbstractTableController
 {
@@ -17,5 +17,15 @@ class TagController extends AbstractTableController
         $this->addFields([
             Text::make('title'),
         ]);
+    }
+
+    public function update(UpdateRequest $request, $id)
+    {
+        return parent::update($request, $id);
+    }
+
+    public function store(StoreRequest $request)
+    {
+        return parent::store($request);
     }
 }

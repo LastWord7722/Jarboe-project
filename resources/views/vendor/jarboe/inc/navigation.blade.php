@@ -31,14 +31,14 @@
             <li>
                 <a href="{{ admin_url('category') }}">
                     <i class="fa fa-tags" aria-hidden="true"></i>
-                    <span class="menu-item-parent">Category</span>
+                    <span class="menu-item-parent"> Category</span>
                 </a>
             </li>
 
             <li>
                 <a href="{{ admin_url('tag') }}">
                     <i class="fa fa-check-square" aria-hidden="true"></i>
-                    <span class="menu-item-parent">Tag</span>
+                    <span class="menu-item-parent"> Tag</span>
                 </a>
             </li>
 

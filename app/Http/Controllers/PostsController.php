@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Http\Requests\Post\StoreRequest;
+use App\Http\Requests\Post\UpdateRequest;
 use App\Models\Post;
 
-use App\Models\Tag;
 use Yaro\Jarboe\Http\Controllers\AbstractTableController;
 use Yaro\Jarboe\Table\Fields\Checkbox;
 use Yaro\Jarboe\Table\Fields\Select;
@@ -23,9 +24,22 @@ class PostsController extends AbstractTableController
             Wysiwyg::make('content'),
             Select::make('category_id')->relation('category', 'title')->
                 type(Select::SELECT_2)->title('Category'),
-            Tags::make('tag_id')->relation('tags','title')->ajax(true)->
+            Tags::make('tags')->relation('tags','title')->ajax(true)->
                 title('Tags'),
             Checkbox::make('is_published')->title('published it'),
         ]);
     }
+
+
+
+    public function update(UpdateRequest $request, $id)
+    {
+        return parent::update($request, $id);
+    }
+
+    public function store(StoreRequest $request)
+    {
+        return parent::store($request);
+    }
 }
+
