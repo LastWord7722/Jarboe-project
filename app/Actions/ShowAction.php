@@ -8,6 +8,7 @@ class ShowAction extends AbstractAction
 {
     public function render($model = null)
     {
-        return view('show', compact('model'));
+        return view('admin.actions.show', compact('model'));
     }
+
 }

@@ -4,32 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc61f89f-382c-4deb-aa68-562acfae9e10" name="Changes" comment="Обновление валидации, визуально поправил код">
-      <change afterPath="$PROJECT_DIR$/app/Actions/ShowAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+    <list default="true" id="fc61f89f-382c-4deb-aa68-562acfae9e10" name="Changes" comment="тацы с action">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Actions/ShowAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/ShowAction.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Post/StoreRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Post/StoreRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Post/UpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Post/UpdateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/jarboe/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/jarboe/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/jarboe/js/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/jarboe/js/app.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/bootstrap-timepicker/bootstrap-timepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/bootstrap-timepicker/bootstrap-timepicker.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/ckeditor/ckeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/ckeditor/ckeditor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/ckeditor/lang/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/ckeditor/lang/ja.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/ckeditor/lang/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/ckeditor/lang/sk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/clipboard.js/2.0.0/clipboard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/clipboard.js/2.0.0/clipboard.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/datatables/jquery.dataTables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/datatables/jquery.dataTables.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/dropzone/dropzone-amd-module.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/dropzone/dropzone-amd-module.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/dropzone/dropzone.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/dropzone/dropzone.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/jquery-cropper/cropper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/jquery-cropper/cropper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/jquery-nestable/jquery.nestable.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/jquery-nestable/jquery.nestable.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/tinymce/themes/mobile/theme.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/tinymce/themes/mobile/theme.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/tinymce/themes/silver/theme.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/tinymce/themes/silver/theme.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/tinymce/tinymce.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/jarboe/js/plugin/tinymce/tinymce.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/jarboe/js/smartwidgets/jarvis.widget.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/jarboe/js/smartwidgets/jarvis.widget.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/jarboe/js/speech/voicecommand.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/jarboe/js/speech/voicecommand.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/actions/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/actions/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -219,7 +199,7 @@
       <workItem from="1678351624833" duration="4946000" />
       <workItem from="1678359209798" duration="11696000" />
       <workItem from="1678374407374" duration="2561000" />
-      <workItem from="1678435303074" duration="21178000" />
+      <workItem from="1678435303074" duration="22899000" />
     </task>
     <task id="LOCAL-00001" summary="Подключил стандартый crud для постов, проверил всё работает&#10;регистрация, авторизация так же присутсвует">
       <created>1678362832630</created>
@@ -320,6 +300,7 @@
     <MESSAGE value="добавил tags:make ajax, так же добавил label, нужно сделать валидацию ещё" />
     <MESSAGE value="Подключил валидацию" />
     <MESSAGE value="Обновление валидации, визуально поправил код" />
-    <option name="LAST_COMMIT_MESSAGE" value="Обновление валидации, визуально поправил код" />
+    <MESSAGE value="тацы с action" />
+    <option name="LAST_COMMIT_MESSAGE" value="тацы с action" />
   </component>
 </project>

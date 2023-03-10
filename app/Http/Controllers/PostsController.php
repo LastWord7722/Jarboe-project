@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Actions\ShowAction;
 use App\Http\Requests\Post\StoreRequest;
 use App\Http\Requests\Post\UpdateRequest;
 use App\Models\Post;
@@ -26,10 +27,7 @@ class PostsController extends AbstractTableController
         $this->addTool(new MassDeleteTool());
         $this->addTool(new ShowHideColumnsTool());
 
-        $this->addAction(\App\Actions\ShowAction::make(), 'before', 'delete');
-
-
-
+        $this->addAction(ShowAction::make(), 'before', 'delete');
 
         $this->addFields([
             Text::make('title')->
@@ -65,6 +63,11 @@ class PostsController extends AbstractTableController
     public function store(StoreRequest $request)
     {
         return parent::store($request);
+    }
+
+    public function show(Post $post){
+
+        return view('show',compact('post'));
     }
 }
 

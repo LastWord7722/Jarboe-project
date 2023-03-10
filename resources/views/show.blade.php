@@ -1,7 +1,7 @@
+@extends('jarboe::layouts.main')
 
-
-<a class="btn btn-default btn-sm"
-   target="_blank"
-   href="{{ route('posts', ['posts' => $model->id]) }}">
-    <i class="fa fa-eye"></i>
-</a>
+@section('content')
+    {{$post->id}}
+    {{$post->title}}
+    {!!$post->content !!}
+@endsection
