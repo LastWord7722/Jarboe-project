@@ -12,6 +12,9 @@ use Yaro\Jarboe\Table\Fields\Tags;
 use Yaro\Jarboe\Table\Fields\Text;
 use Yaro\Jarboe\Table\Fields\Wysiwyg;
 use Yaro\Jarboe\Table\Filters\TextFilter;
+use Yaro\Jarboe\Table\Toolbar\MassDeleteTool;
+use Yaro\Jarboe\Table\Toolbar\MassRestoreTool;
+use Yaro\Jarboe\Table\Toolbar\ShowHideColumnsTool;
 
 class PostsController extends AbstractTableController
 {
@@ -19,6 +22,14 @@ class PostsController extends AbstractTableController
     protected function init()
     {
         $this->setModel(Post::class);
+
+        $this->addTool(new MassDeleteTool());
+        $this->addTool(new ShowHideColumnsTool());
+
+        $this->addAction(\App\Actions\ShowAction::make(), 'before', 'delete');
+
+
+
 
         $this->addFields([
             Text::make('title')->

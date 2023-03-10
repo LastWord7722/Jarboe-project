@@ -245,7 +245,7 @@ var calc_navbar_height = function() {
 
       };
 
-      $.root_.on('click', '[data-action="userLogout"]', function(e) {
+      $.root_.on('click', '[data-actions="userLogout"]', function(e) {
         var $this = $(this);
         smartActions.userLogout($this);
         e.preventDefault();
@@ -258,7 +258,7 @@ var calc_navbar_height = function() {
       /*
        * BUTTON ACTIONS
        */
-      $.root_.on('click', '[data-action="resetWidgets"]', function(e) {
+      $.root_.on('click', '[data-actions="resetWidgets"]', function(e) {
         var $this = $(this);
         smartActions.resetWidgets($this);
         e.preventDefault();
@@ -267,12 +267,12 @@ var calc_navbar_height = function() {
         $this = null;
       });
 
-      $.root_.on('click', '[data-action="launchFullscreen"]', function(e) {
+      $.root_.on('click', '[data-actions="launchFullscreen"]', function(e) {
         smartActions.launchFullscreen(document.documentElement);
         e.preventDefault();
       });
 
-      $.root_.on('click', '[data-action="minifyMenu"]', function(e) {
+      $.root_.on('click', '[data-actions="minifyMenu"]', function(e) {
         var $this = $(this);
         smartActions.minifyMenu($this);
         e.preventDefault();
@@ -286,7 +286,7 @@ var calc_navbar_height = function() {
         $this = null;
       });
 
-      $.root_.on('click', '[data-action="toggleMenu"]', function(e) {
+      $.root_.on('click', '[data-actions="toggleMenu"]', function(e) {
         smartActions.toggleMenu();
 
         Cookies.remove('body_class');
@@ -296,7 +296,7 @@ var calc_navbar_height = function() {
         e.preventDefault();
       });
 
-      $.root_.on('click', '[data-action="toggleShortcut"]', function(e) {
+      $.root_.on('click', '[data-actions="toggleShortcut"]', function(e) {
         smartActions.toggleShortcut();
         e.preventDefault();
       });
@@ -1336,7 +1336,7 @@ function setup_widgets_desktop() {
       },
       // delete btn
       deleteButton : true,
-      deleteMsg:'Warning: This action cannot be undone!',
+      deleteMsg:'Warning: This actions cannot be undone!',
       deleteClass : 'fa fa-times',
       deleteSpeed : 200,
       onDelete : function() {

@@ -28,7 +28,7 @@ class UpdateRequest extends FormRequest
             'Content' => '|string|min:3|max:200',
             'category_id' => 'required',
             'tags' => 'required',
-            'is_published' => 'required',
+            'is_published' => ' ',
         ];
     }
 }
