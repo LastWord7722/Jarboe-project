@@ -11,26 +11,40 @@ use Yaro\Jarboe\Table\Fields\Select;
 use Yaro\Jarboe\Table\Fields\Tags;
 use Yaro\Jarboe\Table\Fields\Text;
 use Yaro\Jarboe\Table\Fields\Wysiwyg;
+use Yaro\Jarboe\Table\Filters\TextFilter;
 
 class PostsController extends AbstractTableController
 {
+
     protected function init()
     {
-
         $this->setModel(Post::class);
 
         $this->addFields([
-            Text::make('title'),
-            Wysiwyg::make('content'),
-            Select::make('category_id')->relation('category', 'title')->
-                type(Select::SELECT_2)->title('Category'),
-            Tags::make('tags')->relation('tags','title')->ajax(true)->
+            Text::make('title')->
+                filter(TextFilter::make()),
+            Wysiwyg::make('content')->
+                filter(TextFilter::make()),
+            Select::make('category_id')->
+                relation('category', 'title')->
+                filter(TextFilter::make())->
+                type(Select::SELECT_2)->
+                title('Category'),
+            Tags::make('tags')->
+                relation('tags','title')->
+                filter(TextFilter::make())->
+                ajax(true)->
                 title('Tags'),
-            Checkbox::make('is_published')->title('published it'),
+            Checkbox::make('is_published')->
+                title('published it'),
         ]);
     }
 
 
+    protected function can($action): bool
+    {
+        return $this->admin()->roles[0]->name === 'Main Admin';
+    }
 
     public function update(UpdateRequest $request, $id)
     {

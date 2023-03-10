@@ -7,6 +7,7 @@ use App\Models\Category;
 
 use Yaro\Jarboe\Http\Controllers\AbstractTableController;
 use Yaro\Jarboe\Table\Fields\Text;
+use Yaro\Jarboe\Table\Filters\TextFilter;
 
 
 class CategoryController extends AbstractTableController
@@ -16,7 +17,8 @@ class CategoryController extends AbstractTableController
         $this->setModel(Category::class);
 
         $this->addFields([
-            Text::make('title'),
+            Text::make('title')->
+                filter(TextFilter::make()),
         ]);
     }
 
