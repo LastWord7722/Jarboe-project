@@ -14,3 +14,4 @@ Route::group(Jarboe::routeGroupOptions(), function () {
     Jarboe::crud('tag', TagController::class);
 });
 Route::get('admin/posts/{post}',[PostsController::class, 'show'])->name('admin.show');
+Route::get('admin/posts/az',[PostsController::class, 'filterAZ'])->name('admin.toolbar.filter');

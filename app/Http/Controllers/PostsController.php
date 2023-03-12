@@ -6,6 +6,8 @@ use App\Http\Requests\Post\StoreRequest;
 use App\Http\Requests\Post\UpdateRequest;
 use App\Models\Post;
 
+use App\Toolbar\FilterTool;
+use http\Env\Request;
 use Yaro\Jarboe\Http\Controllers\AbstractTableController;
 use Yaro\Jarboe\Table\Fields\Checkbox;
 use Yaro\Jarboe\Table\Fields\Select;
@@ -14,8 +16,8 @@ use Yaro\Jarboe\Table\Fields\Text;
 use Yaro\Jarboe\Table\Fields\Wysiwyg;
 use Yaro\Jarboe\Table\Filters\TextFilter;
 use Yaro\Jarboe\Table\Toolbar\MassDeleteTool;
-use Yaro\Jarboe\Table\Toolbar\MassRestoreTool;
 use Yaro\Jarboe\Table\Toolbar\ShowHideColumnsTool;
+
 
 class PostsController extends AbstractTableController
 {
@@ -26,6 +28,8 @@ class PostsController extends AbstractTableController
 
         $this->addTool(new MassDeleteTool());
         $this->addTool(new ShowHideColumnsTool());
+
+        $this->addTool(new FilterTool());
 
         $this->addAction(ShowAction::make(), 'before', 'delete');
 
@@ -50,10 +54,10 @@ class PostsController extends AbstractTableController
     }
 
 
-    protected function can($action): bool
+    /*protected function can($action): bool
     {
         return $this->admin()->roles[0]->name === 'Main Admin';
-    }
+    }*/
 
     public function update(UpdateRequest $request, $id)
     {
@@ -69,5 +73,15 @@ class PostsController extends AbstractTableController
 
         return view('show',compact('post'));
     }
+
+    public function filterAZ(){
+
+        $posts = Post::orderBy('title', 'asc')->get();
+
+        $check = parent::list($posts); // не розумию, тут сортировка одна, на сайте оторажаетья другая сортировка
+        /*return route(('posts'), compact('posts'));*/
+    }
+
+
 }
 

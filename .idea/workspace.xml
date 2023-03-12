@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc61f89f-382c-4deb-aa68-562acfae9e10" name="Changes" comment="тацы с action">
+    <list default="true" id="fc61f89f-382c-4deb-aa68-562acfae9e10" name="Changes" comment="Первый рабочий action">
+      <change afterPath="$PROJECT_DIR$/app/Toolbar/FilterTool.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/toolbar/filterAZ.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Actions/ShowAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/ShowAction.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/actions/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/actions/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -199,7 +198,8 @@
       <workItem from="1678351624833" duration="4946000" />
       <workItem from="1678359209798" duration="11696000" />
       <workItem from="1678374407374" duration="2561000" />
-      <workItem from="1678435303074" duration="22899000" />
+      <workItem from="1678435303074" duration="23808000" />
+      <workItem from="1678614127747" duration="5231000" />
     </task>
     <task id="LOCAL-00001" summary="Подключил стандартый crud для постов, проверил всё работает&#10;регистрация, авторизация так же присутсвует">
       <created>1678362832630</created>
@@ -271,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678445089018</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Первый рабочий action">
+      <created>1678466367078</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1678466367078</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,6 +308,7 @@
     <MESSAGE value="Подключил валидацию" />
     <MESSAGE value="Обновление валидации, визуально поправил код" />
     <MESSAGE value="тацы с action" />
-    <option name="LAST_COMMIT_MESSAGE" value="тацы с action" />
+    <MESSAGE value="Первый рабочий action" />
+    <option name="LAST_COMMIT_MESSAGE" value="Первый рабочий action" />
   </component>
 </project>
